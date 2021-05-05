@@ -1,0 +1,29 @@
+.form__container {
+  background-color: lightgray;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+.form__container form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.form__container label {
+  margin-left: 0.16rem;
+  margin-bottom: 0.3rem;
+}
+
+.form__container button {
+  margin-top: 1rem;
+  appearance: none;
+}
+
+.form__title {
+  color: red;
+  margin-bottom: 1.5rem;
+}
