@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %> 
+
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <% if (!(collection.length > 0)) { %>
+          <h5>EMPTY LIST</h5>
+        <% } else { %>
+          <ul class="grid">
+            <% collection.forEach(element => { %>
+              <li class="grid__element">
+                <article class="card">
+                  <div class="card__header">
+                    <h5 class="card__title">
+                      <%= element.name %> 
+                    </h5>
+                  </div>
+                </article>
+              </li>
+           <% }) %>
+        </ul>
+        <% } %>
+      </section>
+     </main> 
+<%- include('includes/end.ejs') %> 
