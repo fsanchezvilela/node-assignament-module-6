@@ -10,9 +10,9 @@ router.get('/', (req,res) =>{
 })
 
 //'@POST => /users'
-
 router.post('/', (req,res) =>{
-  users.push({name: req.body.name})
+  const {name} = req.body
+  name && users.push({name})
   res.redirect('/users')
 })
 
